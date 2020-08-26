@@ -251,3 +251,42 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Style button-------------------------------------------------
+
+const styleButton = document.getElementById("style");
+var contor = 0;
+topButtonsList = document.getElementsByClassName('topBtn');
+
+
+function switchToGrey(){
+  document.body.style.backgroundImage = 'url(Background-Image3.JPG)';
+  document.body.style.backgroundSize = "cover";
+  for (var j = 0; j < topButtonsList.length; j++) {
+    topButtonsList[j].style.backgroundColor = "#363535";
+  }
+};
+
+function SwitchToColor() {
+  document.body.style.backgroundImage = 'url(Background-Image2.JPG)';
+  document.body.style.backgroundSize = "cover";
+  for (var j = 0; j < topButtonsList.length; j++) {
+    topButtonsList[j].style.backgroundColor = "#731B07";
+  }
+};
+
+function changeStyle(event) {
+  contor += 1;
+  if (contor % 2 == 0){
+    console.log(contor);
+    document.documentElement.setAttribute('data-theme', 'color');
+    SwitchToColor(); 
+  } else {
+    console.log(contor);
+    document.documentElement.setAttribute('data-theme', 'grey');
+    switchToGrey();
+    };
+  
+}
+
+styleButton.addEventListener("click", changeStyle);

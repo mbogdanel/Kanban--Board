@@ -13,9 +13,16 @@ html {
   
 }
 
+[data-theme="grey"] {
+  --column-1: #e8eff0;
+  --column-2: #c4c5c3;
+  --column-3: #5a5b5c;
+  --column-4: #363535;
+
+}
 body {
   margin: 0;
-  background: url('Background-Image2.jpg');
+  background-image: url('Background-Image2.jpg');
   background-size: cover;
   background-position: 50% 60%;
   background-attachment: fixed;
@@ -35,7 +42,7 @@ body {
 }
 
 
-.btn {
+.topBtn {
   background-color: #731B07; /* red background */
   border: none; /* Remove borders */
   color: rgb(244, 247, 247); /* White text */
@@ -46,8 +53,8 @@ body {
   margin: 10px;
 }
 
-/* Darker background on mouse-over */
-.btn:hover {
+/* Lighter background on mouse-over */
+.topBtn:hover {
   background-color: #75392E;
 }
 
@@ -84,7 +91,6 @@ body {
   float: right;
   font-size: 35px;
   font-weight: bold;
-  margin: 30px;
 }
 
 .close:hover,
@@ -312,3 +318,26 @@ ul {
     margin: 10px;
   }
 }
+
+/* 
+/* Toggle button -------------------------------------------*/
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  right: 25px;
+  top: 30px;
+}
+
+.theme-switch-wrapper span {
+  margin-right: 10px;
+  font-size: 1rem;
+} */
