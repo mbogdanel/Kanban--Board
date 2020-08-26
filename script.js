@@ -268,7 +268,7 @@ function switchToGrey(){
 };
 
 function SwitchToColor() {
-  document.body.style.backgroundImage = 'url(Background-Image2.JPG)';
+  document.body.style.backgroundImage = 'url(Background-Image2.jpg)';
   document.body.style.backgroundSize = "cover";
   for (var j = 0; j < topButtonsList.length; j++) {
     topButtonsList[j].style.backgroundColor = "#731B07";
