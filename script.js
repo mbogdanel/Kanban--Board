@@ -212,7 +212,7 @@ updateDOM();
 
 
 
-// Get the modal for ///////////////////////////////////////////////////////////////
+// Get the modal for ------------------------------------------------------------
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
 var motivation = document.getElementById("motivation");
@@ -252,7 +252,7 @@ window.onclick = function(event) {
   }
 }
 
-// Style button-------------------------------------------------
+// Style button------------------------------------------------------------------
 
 const styleButton = document.getElementById("style");
 var contor = 0;
@@ -260,7 +260,7 @@ topButtonsList = document.getElementsByClassName('topBtn');
 
 
 function switchToGrey(){
-  document.body.style.backgroundImage = 'url(Background-Image3.JPG)';
+  document.body.style.backgroundImage = 'url(Grey-Image.JPG)';
   document.body.style.backgroundSize = "cover";
   for (var j = 0; j < topButtonsList.length; j++) {
     topButtonsList[j].style.backgroundColor = "#363535";
@@ -268,7 +268,7 @@ function switchToGrey(){
 };
 
 function SwitchToColor() {
-  document.body.style.backgroundImage = 'url(Background-Image2.jpg)';
+  document.body.style.backgroundImage = 'url(Color-Image.jpg)';
   document.body.style.backgroundSize = "cover";
   for (var j = 0; j < topButtonsList.length; j++) {
     topButtonsList[j].style.backgroundColor = "#731B07";
